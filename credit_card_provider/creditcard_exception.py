@@ -1,0 +1,2 @@
+class CreditCardException(Exception):
+    pass
