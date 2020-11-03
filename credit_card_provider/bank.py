@@ -19,10 +19,10 @@ class Bank:
             number = number[1:]
         return int(number)
 
-    def create_account(self, credit_card_number, user: User, limit: int):
+    def create_account(self, credit_card_number: str, user: User, limit: int):
         if Bank.validate_card(credit_card_number):
             account = Account(user, credit_card_number, limit)
-            user.assosiate(account)
+            user.associate(account)
             self._valid_accounts[user.name] = account
         else:
             self._invalid_accounts[user.name] = None

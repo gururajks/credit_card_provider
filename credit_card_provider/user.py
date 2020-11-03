@@ -16,7 +16,7 @@ class User:
         account = self._accounts[account_id]
         account.credit(amount)
 
-    def assosiate(self, account: Account):
+    def associate(self, account: Account):
         self._accounts[account.account_id] = account
 
     @property
