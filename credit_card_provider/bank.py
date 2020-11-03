@@ -17,9 +17,9 @@ class Bank:
     def sanitize_amount(cls, number):
         if number[0] == '$':
             number = number[1:]
-        return int(number)
+        return float(number)
 
-    def create_account(self, credit_card_number: str, user: User, limit: int):
+    def create_account(self, credit_card_number, user: User, limit: float):
         if Bank.validate_card(credit_card_number):
             account = Account(user, credit_card_number, limit)
             user.associate(account)
@@ -27,7 +27,7 @@ class Bank:
         else:
             self._invalid_accounts[user.name] = None
 
-    def execute(self, transaction):
+    def execute(self, transaction: str):
         transaction_details = transaction.split(' ')
         if transaction_details[0] == 'Add':
             user = User(transaction_details[1])
@@ -46,6 +46,6 @@ class Bank:
 
     def transaction_log(self):
         for account_name, account in self._valid_accounts.items():
-            print(f"{account_name}:     {account.balance}")
+            print(f"{account_name}:     {account.balance: .2f}")
         for account_name, account in self._invalid_accounts.items():
             print(f"{account_name}:      Error")
