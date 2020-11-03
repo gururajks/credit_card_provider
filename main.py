@@ -10,6 +10,8 @@ def read_from_file(input_file):
         for line in fp.readlines():
             b.execute(line)
 
+    b.transaction_log()
+
 
 def main():
     # if len(sys.argv) == 2:
