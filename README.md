@@ -11,7 +11,9 @@ part of a backend like a web application. This makes it very reusable
 and there is a abundant supply of pre-existing third party python packages/libraries.   
 
 #### How to install any required dependencies (runtimes, frameworks, etc)
-Python version is 3.7.3
+Install python: https://www.python.org/downloads/release/python-373/
+Python version is `3.7.3`
+
 - (optional) Create a virtual environment as it keeps the dependencies isolated. Make sure you have virtualenv installed and run `virtualenv venv`
 
 ##### Dependencies: `luhn`
