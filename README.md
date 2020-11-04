@@ -12,9 +12,9 @@ and there is a abundant supply of pre-existing third party python packages/libra
 
 #### How to install any required dependencies (runtimes, frameworks, etc)
 Python version is 3.7.3
-Create a virtual environment as it keeps the dependencies isolated.
-Make sure you have virtualenv installed and run `virtualenv venv`
-Dependencies: `luhn`
+- (optional) Create a virtual environment as it keeps the dependencies isolated. Make sure you have virtualenv installed and run `virtualenv venv`
+
+##### Dependencies: `luhn`
 Run: `pip install -r requirements.txt`
 
 #### How to build, package or compile your code if applicable
