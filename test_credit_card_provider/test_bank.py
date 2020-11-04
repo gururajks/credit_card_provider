@@ -1,6 +1,6 @@
 import unittest
 from credit_card_provider import bank
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 
 class BankTest(unittest.TestCase):
