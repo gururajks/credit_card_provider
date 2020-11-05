@@ -52,8 +52,16 @@ class Bank:
     # prints the transactions/history in alphabetical order
     def transaction_log(self) -> None:
         all_accounts = {**self._valid_accounts, **self._invalid_accounts}
-        for account_name, account in sorted(all_accounts.items()):
+        display = []
+        # display the user irrespective of the user's name (caps or lower)
+        for account_name, account in all_accounts.items():
             if not account:
+                display.append((account_name.lower(), account_name, None))
+            else:
+                display.append((account_name.lower(), account_name, account.balance))
+        display.sort(key=lambda x: x[0])
+        for _, account_name, account_balance in display:
+            if account_balance is None:
                 print(f"{account_name}:     Error")
             else:
-                print(f"{account_name}:     {account.balance: .2f}")
+                print(f"{account_name}:     {account_balance: .2f}")
