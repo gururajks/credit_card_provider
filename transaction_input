@@ -1,17 +1,9 @@
-Add Tom 4111111111111111 $1000
-Add Lisa 5454545454545454 $3000
-Add Quincy 1234567890123456 $2000
-Charge Tom $500
-Charge Tom $800
-Charge Lisa $7
-Credit Lisa $100
-Credit Quincy $200
-Add Deepu 4539081730968403 $250000
-Charge Deepu $10000
-Charge Deepu $10000
-Credit Deepu $15000
-Charge Deepu $25.9
-Credit Deepu $43.12
-Add karen 4539081730968403 $100
-Charge karen $80
-Add adam 4539081730968403 $1000
+Add Tom Home 4111111111111111 $1000
+Add Tom Work 4012000033330026 $500
+Add Lisa Work 5454545454545454 $3000
+Add Lisa Gold 4111111111111112 $1000
+Add Lisa Platinum 378282246310005 $2000
+Charge Tom Home $500
+Charge Tom Work $800
+Charge Lisa Work $7
+Credit Lisa Platinum $100

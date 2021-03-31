@@ -7,7 +7,7 @@ class TestAccount(unittest.TestCase):
 
     def setUp(self) -> None:
         self.test_user = user.User("Test User")
-        self.test_account = account.Account(self.test_user, 4111111111111111, 1000)
+        self.test_account = account.Account(self.test_user, 4111111111111111, 1000, "Home")
 
     def test_debit(self):
         self.test_account.debit(100)

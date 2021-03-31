@@ -10,7 +10,9 @@ def read_from_file(input_file):
         for line in fp.readlines():
             current_bank.execute(line)
 
-    current_bank.transaction_log()
+    output = current_bank.transaction_log()
+    for line in output:
+        print(line)
 
 
 def read_from_stdin(std_input):
@@ -18,7 +20,9 @@ def read_from_stdin(std_input):
     for line in std_input:
         current_bank.execute(line)
 
-    current_bank.transaction_log()
+    output = current_bank.transaction_log()
+    for line in output:
+        print(line)
 
 
 def main():

@@ -3,11 +3,12 @@ from credit_card_provider import creditcard_exception
 
 class Account:
 
-    def __init__(self, user, credit_card_number: int, credit_card_limit: float):
+    def __init__(self, user, credit_card_number: int, credit_card_limit: float, tag: str):
         self.credit_card_limit = credit_card_limit
         self._balance = 0.0
         self._user = user
         self.account_id = credit_card_number
+        self.tag = tag
 
     def debit(self, amount: float):
         if self._balance + amount <= self.credit_card_limit:
